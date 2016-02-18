@@ -18,9 +18,14 @@
         <div class='socket-container'>
           <h1>A SOCKET.IO CLIENT</h1>
           <form>
-            <input class='input' type='text' name='address' placeholder='Enter your address'>
-            <input class='input' type='text' name='event' placeholder='Enter your event'>
-            <textarea class='email-input' id='message' type='application/json' placeholder='Enter your message'></textarea>
+            <input class='input' id='first-field' autocorrect='off' spellcheck='false'
+            type='text' name='address' placeholder='Enter your address'>
+
+            <input class='input' id='second-field' autocorrect='off' spellcheck='false'
+            type='text' name='event' placeholder='Enter your event'>
+
+            <textarea class='email-input' id='message' autocorrect='off' spellcheck='false'
+            type='application/json' placeholder='Enter your message'></textarea>
           </form>
           <button id="send-socket">SEND SOCKET</button>
         </div>
