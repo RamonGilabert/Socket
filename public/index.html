@@ -4,7 +4,7 @@
   <head>
     <title>Socket</title>
     <link rel='stylesheet' type='text/css' href='style.css'>
-    <script type='text/javascript' src='scripts.js'></script>
+    <script type='text/javascript' src='app.js'></script>
 
     <meta property='og:title' content='Socket' />
     <meta property='og:description' content='A socket client' />
@@ -14,14 +14,16 @@
 
   <body>
     <div class='background'>
-      <div class='socket-container'>
-        <h1>A SOCKET.IO CLIENT</h1>
-        <form>
-          <input class='input' type='text' name='address' placeholder='Enter your address'>
-          <input class='input' type='text' name='event' placeholder='Enter your event'>
-          <textarea class='email-input' type='application/json'></textarea>
-        </form>
-        <button id="send-socket">SEND SOCKET</button>
+      <div class='container'>
+        <div class='socket-container'>
+          <h1>A SOCKET.IO CLIENT</h1>
+          <form>
+            <input class='input' type='text' name='address' placeholder='Enter your address'>
+            <input class='input' type='text' name='event' placeholder='Enter your event'>
+            <textarea class='email-input' id='message' type='application/json' placeholder='Enter your message'></textarea>
+          </form>
+          <button id="send-socket">SEND SOCKET</button>
+        </div>
       </div>
     </div>
   </body>
