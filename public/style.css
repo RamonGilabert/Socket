@@ -58,11 +58,13 @@ form * {
 
 .input {
   height: 60px;
+  border: 0.5px solid #4A90E2;
 }
 
 .email-input {
   height: 270px;
   resize: none;
+  border: 0.5px solid #4A90E2;
 }
 
 h1 {

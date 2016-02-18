@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var text = message.value;
 
     if (text[text.length - 2] === '{' && text[text.length - 1] === '\n') {
-      message.value = text + '\n}';
-      message.setSelectionRange(2, 2);
+      message.value = text + '    \n}';
+      message.setSelectionRange(6, 6);
     }
 
     if (text[0] === '{' && text[text.length - 1] === '}') {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       for (index in lines) {
         var line = lines[index];
         if (line[0] != ' ' && line != '{' && line != '}') {
-          lines[index] = '  ' + line;
+          lines[index] = '    ' + line;
         }
       }
 
