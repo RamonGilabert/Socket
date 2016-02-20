@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var secondField = document.getElementById('second-field');
   var message = document.getElementById('message');
   var button = document.getElementById('send-socket');
+  var socket = io('https://lights-backend.herokuapp.com');
 
   message.addEventListener('input', function() {
     var text = message.value;
@@ -51,11 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
       stringJSON += line.replace(/ /g,'');
     });
 
-    var socket = io(address);
     var letter = JSON.parse(stringJSON);
 
-    socket.on('connect', function() {
-      socket.emit(channel, letter);
-    });
+    socket.emit(channel, letter);
   });
 });
