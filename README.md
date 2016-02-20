@@ -1,4 +1,4 @@
-![Socket](http://socket.io)
+![Socket](https://github.com/RamonGilabert/Socket/blob/master/resources/socket.png)
 
 # Socket
 
