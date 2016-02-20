@@ -1,0 +1,10 @@
+{
+  "repository": "RamonGilabert/Socket",
+  "version": "0.0.1",
+  "author": "Ramon Gilabert",
+  "name": "Socket",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "socket.io-client": "^1.4.5"
+  }
+}

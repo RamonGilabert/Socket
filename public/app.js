@@ -51,8 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
       stringJSON += line.replace(/ /g,'');
     });
 
-    console.log(stringJSON);
     var letter = JSON.parse(stringJSON);
-    console.log(letter);
+    var socket = io(address);
+
+    socket.on('connect', function() {
+      socket.emit(channel, letter);
+    });
   });
 });
