@@ -9,7 +9,7 @@ It contains of 3 fields, the first one to add the *address* you want to send the
 ```
 https://lights-backend.herokuapp.com
 
-iOS-light
+ios-light
 
 "id": 1,
 "controllerID": 1,
