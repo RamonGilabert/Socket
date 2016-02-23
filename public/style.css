@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  background-image: url('../resources/background-image.png');
+  background-size: 200px 200px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.socket-container {
+  background-color: #F8F8F8;
+  width: 600px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid #53A0FD;
+  border-radius: 10px;
+  padding-bottom: 60px;
+  box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.4);
+}
+
+.socket-container button {
+  font-family: 'Open Sans', 'sans-serif';
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background-color: #253D58;
+  color: white;
+  border: none;
+  width: 90%;
+  height: 70px;
+  margin-top: 60px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+form * {
+  font-family: 'Open Sans', 'sans-serif';
+  font-size: 18px;
+  display: block;
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input {
+  height: 60px;
+  border: 0.5px solid #4A90E2;
+}
+
+.email-input {
+  height: 270px;
+  resize: none;
+  border: 0.5px solid #4A90E2;
+  font-family: 'Inconsolata';
+  font-size: 21px;
+}
+
+h1 {
+  color: #4C4C4C;
+  font-family: 'Open Sans', 'sans-serif';
+  font-weight: 300;
+  font-size: 52px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+}

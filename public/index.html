@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Socket</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script src="../node_modules/socket.io-client/socket.io.js"></script>
+    <script type='text/javascript' src='app.js'></script>
+
+    <meta property='og:title' content='Socket' />
+    <meta property='og:description' content='A socket client' />
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no' />
+  </head>
+
+  <body>
+    <div class='background'>
+      <div class='container'>
+        <div class='socket-container'>
+          <h1>A SOCKET.IO CLIENT</h1>
+          <form>
+            <input class='input' id='first-field' autocorrect='off' spellcheck='false'
+            type='text' name='address' placeholder='Enter your address', value='https://lights-backend.herokuapp.com'>
+
+            <input class='input' id='second-field' autocorrect='off' spellcheck='false'
+            type='text' name='event' placeholder='Enter your event', value='ios-light'>
+
+            <textarea class='email-input' id='message' autocorrect='off' spellcheck='false'
+            type='application/json' placeholder='Enter your message'></textarea>
+          </form>
+          <button id="send-socket">SEND SOCKET</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
